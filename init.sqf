@@ -1,3 +1,4 @@
+enableSaving [false, false];
 toggleHeadshotMode = {
      {
         if (headshotMode && ((getPos _x) select 2 > -1)) then {

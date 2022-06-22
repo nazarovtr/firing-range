@@ -2,7 +2,7 @@ allTargets = nearestObjects [skull, ["TargetP_Inf_F", "TargetP_Inf_Acc2_F"], 200
 {
     _x setPos (getPos _x vectorAdd [0,0,-0.3]);
     if ("TargetP_Inf_Acc2_F" == typeOf _x) then {
-     _x setObjectTexture [0, "#(rgb,8,8,3)color(0.4,0,0,1)"];
+     _x setObjectTextureGlobal [0, "#(rgb,8,8,3)color(0.4,0,0,1)"];
     };
     _x addMPEventHandler  ["MPHit", {
         params ["_unit", "_causedBy", "_damage", "_instigator"];
